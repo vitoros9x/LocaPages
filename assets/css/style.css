@@ -697,7 +697,6 @@ ol {
 	padding-bottom: 4px;
 	margin-bottom: 1rem;
 	border-bottom: 1px solid var(--orange);
-	text-transform: uppercase;
 }
 .footer-links {
 	list-style: none;
