@@ -293,14 +293,6 @@ body {
     grid-template-columns: repeat(2, 50%);
   }
 }
-@media (max-width: 470px) {
-  .timeline-boxes {
-    grid-template-columns: repeat(1, 75%);
-    grid-row-gap: 30px;
-    margin-top: 30px;
-    justify-content: center;
-  }
-}
 .timeline-boxes__item {
   position: relative;
   background-size: auto 110%;
@@ -321,7 +313,7 @@ body {
 }
 @media (max-width: 767px) {
   .timeline-boxes__item .title {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 .timeline-boxes__item p {
@@ -333,7 +325,7 @@ body {
 }
 @media (max-width: 767px) {
   .timeline-boxes__item p:not(.title) {
-    font-size: 17px;
+    font-size: 13px;
   }
 }
 .timeline-boxes__item .highlight {
@@ -410,8 +402,9 @@ body {
 }
 @media (max-width: 767px) {
   .timeline-boxes__index {
-    font-size: 35px;
-    right: 50px;
+    font-size: 28px;
+    right: 35px;
+    top: 46%;
   }
 }
 
