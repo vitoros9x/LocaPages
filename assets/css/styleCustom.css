@@ -17,10 +17,13 @@ body {
   color: #ffb400;
 }
 .co-hoi-hop-tac .banner-img {
-  min-height: 440px;
-  height: auto;
-  width: 100%;
+  width: auto;
+  height: 100%;
   object-fit: cover;
+}
+.co-hoi-hop-tac .banner-img-wrapper {
+  overflow-x: scroll;
+  height: 440px;
 }
 .co-hoi-hop-tac .banner .content {
   bottom: 0;
@@ -291,6 +294,7 @@ body {
 @media (max-width: 575px) {
   .timeline-boxes {
     grid-template-columns: repeat(2, 50%);
+    grid-row-gap: 40px;
   }
 }
 .timeline-boxes__item {
