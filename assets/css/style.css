@@ -48,15 +48,15 @@ Tags:
 
 @font-face {
 	font-family: "avo";
-	src: url("./assets/fonts/avo/Avo.ttf");
+	src: url("../fonts/avo/Avo.ttf");
 }
 @font-face {
 	font-family: "avo-bold";
-	src: url("./assets/fonts/avo/AvoBold.ttf");
+	src: url("../fonts/avo/AvoBold.ttf");
 }
 @font-face {
 	font-family: "alter-gothic";
-	src: url("./assets/fonts/alter-gothic/alter-gothic.ttf");
+	src: url("../fonts/alter-gothic/alter-gothic.ttf");
 }
 
 body {
