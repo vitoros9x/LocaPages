@@ -207,6 +207,7 @@ body {
 
 .body {
   padding-top: 106px;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -724,8 +725,8 @@ body {
 }
 
 .section-1 {
-  background: url(../images/TT/bgSection1.jpg) no-repeat;
-  background-size: 100%;
+  background: url(../images/TT/bgSection1.png) #212c63 no-repeat;
+  background-size: cover;
   background-position: bottom;
 }
 .section-1 .video-frame iframe {
@@ -741,6 +742,28 @@ body {
   background-size: contain;
   background-position: bottom;
 }
+.section-1__top .video-frame {
+  position: relative;
+  padding-top: 45%;
+}
+@media (max-width: 991px) {
+  .section-1__top .video-frame {
+    padding-top: 56%;
+  }
+}
+.section-1__top .video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80%;
+  height: 100%;
+  transform: translateX(-50%);
+}
+@media (max-width: 991px) {
+  .section-1__top .video-frame iframe {
+    width: 100%;
+  }
+}
 
 .section-1__top-content {
   font-weight: 500;
@@ -752,6 +775,7 @@ body {
 }
 .section-1__top-content .list {
   position: relative;
+  padding: 0;
 }
 .section-1__top-content .list::after {
   content: "";
@@ -762,6 +786,22 @@ body {
   background: var(--orange);
   top: 120%;
   left: 0;
+}
+.section-1__top-content .list li {
+  padding-left: 30px;
+  position: relative;
+}
+.section-1__top-content .list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100vmax;
+  background: #fff;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .section-1__top-quote {
@@ -1770,19 +1810,19 @@ body {
   margin-right: 30px;
 }
 
-.section-9__top {
+.section-9__bottom {
   background: url(../images/TT/thuong-loca.png) no-repeat;
   background-size: cover;
   padding: 20px 0 0;
 }
-.section-9__top .line {
+.section-9__bottom .line {
   height: 10px;
   background: linear-gradient(to right, transparent, #fff, transparent);
 }
-.section-9__top .line:last-child {
+.section-9__bottom .line:last-child {
   margin-top: 50px;
 }
-.section-9__top .label + .line {
+.section-9__bottom .label + .line {
   margin: 30px 0 50px;
 }
 
@@ -1795,6 +1835,41 @@ body {
   font-size: 15px;
   padding: 5px 30px;
   font-style: italic;
+}
+
+.section-9__top {
+  background: url(../images/TT/gia-tri-loca-bg.png) no-repeat;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.section-9__top .desc {
+  color: #01edfc;
+  font-weight: 600;
+  font-size: 24px;
+  margin: 15px 0 30px;
+}
+.section-9__top .highlight {
+  color: #fffc00;
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 4px;
+}
+.section-9__top .highlight + div {
+  font-size: 20px;
+  font-weight: 500;
+}
+.section-9__top .box-timeline .row {
+  margin-bottom: 10px;
+}
+.section-9__top .timeline-label {
+  font-family: "avo-bold";
+  font-size: 18px;
+  text-align: center;
+  background: linear-gradient(to bottom, #5b6df6, #15174c);
+  border: 3px solid blue;
+  border-radius: 100vmax;
+  padding: 3px 0;
 }
 
 /*# sourceMappingURL=styleCustom.css.map */
