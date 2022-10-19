@@ -2333,6 +2333,7 @@ body {
 
   .boxes-child {
     margin: -35px auto 0;
+    overflow-x: scroll;
 
     &__item {
       background: #0077d5;
