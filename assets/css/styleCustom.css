@@ -1102,6 +1102,11 @@ body {
   font-family: inherit;
   padding: 10px 0;
 }
+@media (max-width: 767px) {
+  .section-3__location-title {
+    font-size: 20px;
+  }
+}
 
 .section-3__bottom {
   padding-left: 0;
