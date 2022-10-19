@@ -1720,8 +1720,9 @@ body {
       transform: translateY(-50%);
 
       @media (max-width: 991px) {
-        left: calc(100% + 30px);
+        left: calc(100% + 15px);
         right: unset;
+        --size: 20vw;
       }
     }
   }
@@ -2258,12 +2259,11 @@ body {
   @media (max-width: 767px) {
     .timeline-wrapper {
       display: flex;
-      height: 400px;
       overflow-x: scroll;
 
       img {
         max-width: unset;
-        width: auto;
+        width: 250%;
         height: auto;
       }
     }

@@ -1620,8 +1620,9 @@ body {
 }
 @media (max-width: 991px) {
   .section-6__path-4 .box-text-cirlce__item:last-child::after {
-    left: calc(100% + 30px);
+    left: calc(100% + 15px);
     right: unset;
+    --size: 20vw;
   }
 }
 .section-6__path-4 .loca-bonus {
@@ -2125,12 +2126,11 @@ body {
 @media (max-width: 767px) {
   .section-7__path-7 .timeline-wrapper {
     display: flex;
-    height: 400px;
     overflow-x: scroll;
   }
   .section-7__path-7 .timeline-wrapper img {
     max-width: unset;
-    width: auto;
+    width: 250%;
     height: auto;
   }
 }
