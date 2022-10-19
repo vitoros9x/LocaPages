@@ -865,6 +865,11 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
 }
+@media (max-width: 767px) {
+  .section-1__bottom-box-image .title {
+    font-size: 20px;
+  }
+}
 
 .section-2 {
   background: url(../images//TT/bgSection2.jpg) no-repeat;
