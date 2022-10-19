@@ -850,6 +850,7 @@ body {
 }
 .section-1__top-quote .author {
   text-align: right;
+  font-style: italic;
 }
 
 .section-1__bottom-box-image {
@@ -1124,6 +1125,11 @@ body {
   padding: 10px 6%;
   position: relative;
   margin-top: 30px;
+}
+@media (max-width: 767px) {
+  .section-3__bottom-item span {
+    display: block;
+  }
 }
 .section-3__bottom-item::before {
   content: "";
@@ -1539,7 +1545,7 @@ body {
   padding: 80px 0;
   justify-content: space-between;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .section-6__path-4 .box-text-cirlce {
     flex-direction: column;
     padding: 40px 0;
@@ -1566,7 +1572,9 @@ body {
 }
 @media (max-width: 767px) {
   .section-6__path-4 .box-text-cirlce__item {
-    max-width: 100%;
+    max-width: 70%;
+    font-size: 16px;
+    padding: 20px 8px;
   }
   .section-6__path-4 .box-text-cirlce__item:first-child {
     margin-right: 0;
@@ -1592,11 +1600,6 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (max-width: 1199px) {
-  .section-6__path-4 .box-text-cirlce__item:first-child::after {
-    display: none;
-  }
-}
 .section-6__path-4 .box-text-cirlce__item:last-child::after {
   --size: 13vw;
   content: "";
@@ -1610,9 +1613,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .section-6__path-4 .box-text-cirlce__item:last-child::after {
-    display: none;
+    left: calc(100% + 30px);
+    right: unset;
   }
 }
 .section-6__path-4 .loca-bonus {
@@ -1905,7 +1909,8 @@ body {
 }
 @media (max-width: 767px) {
   .section-7__path-1 .box-text {
-    font-size: 35px;
+    font-size: 25px;
+    max-width: 120px;
   }
 }
 .section-7__path-1 img {
@@ -2021,8 +2026,10 @@ body {
   height: 100%;
   scale: 1.1;
 }
-.section-7__path-3 .circles .right {
-  margin-top: 50px;
+@media (max-width: 767px) {
+  .section-7__path-3 .circles .right {
+    margin-top: 50px;
+  }
 }
 .section-7__path-3 .benefit-description {
   margin: 0 auto;
@@ -2218,7 +2225,11 @@ body {
 }
 .section-8 .boxes-child {
   margin: -35px auto 0;
-  overflow-x: scroll;
+}
+@media (max-width: 767px) {
+  .section-8 .boxes-child {
+    overflow-x: scroll;
+  }
 }
 .section-8 .boxes-child__item {
   background: #0077d5;
@@ -2405,6 +2416,9 @@ body {
 @media (max-width: 767px) {
   .section-9__top .highlight {
     font-size: 16px;
+  }
+  .section-9__top .highlight span {
+    display: block;
   }
 }
 .section-9__top .highlight + div {
