@@ -1,11 +1,23 @@
 $(document).ready(function () {
-    $(window).on('scroll', function(e) {
+    let windowPosition = $(window).scrollTop()
+
+    $(window).on('scroll', function (e) {
         if ($(window).scrollTop() > 92) {
             $('.site-header').addClass('scroll');
         } else {
             $('.site-header').removeClass('scroll');
         }
     });
+
+    $(window).on('scroll', function (e) {
+        if ($(window).scrollTop() > windowPosition) {
+            $('.navbar-locamos').slideUp();
+        } else {
+            $('.navbar-locamos').slideDown();
+        }
+
+        windowPosition = $(window).scrollTop()
+    })
 });
 
 function getUrlParameter(sParam) {
