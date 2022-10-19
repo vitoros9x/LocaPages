@@ -1248,6 +1248,7 @@ body {
   padding: 50px 20px;
   color: #fff;
   border: 3px solid var(--blue-ocean);
+  height: calc(100% - 3px);
 }
 .section-5__location-bottom .right img {
   height: 100%;
@@ -1259,6 +1260,9 @@ body {
 }
 .section-5__location-bottom .desc-top {
   margin-top: 30px;
+}
+.section-5__location-bottom ul {
+  padding: 0;
 }
 .section-5__location-bottom li {
   display: flex;
@@ -1280,7 +1284,8 @@ body {
   height: auto;
   display: flex;
   align-items: center;
-  padding: 0 20px;
+  padding: 5px 20px;
+  flex: 1;
 }
 .section-5__location-bottom .desc-bottom {
   margin-top: 50px;
