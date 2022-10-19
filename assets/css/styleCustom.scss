@@ -1318,6 +1318,10 @@ body {
     color: #fff;
     border: 3px solid var(--blue-ocean);
     height: calc(100% - 3px);
+
+    @media (max-width: 767px) {
+      padding: 30px 15px;
+    }
   }
 
   .right {
@@ -1330,6 +1334,10 @@ body {
   p {
     font-size: 25px;
     font-weight: 500;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
   }
 
   .desc-top {
@@ -1379,6 +1387,10 @@ body {
       font-weight: 500;
       font-style: italic;
       font-size: 18px;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -1388,6 +1400,10 @@ body {
   padding: 0 50px;
   border-radius: 100vmax;
   border: 1px solid blue;
+
+  @media (max-width: 767px) {
+    padding: 0 20px;
+  }
 }
 
 .section-6 {
@@ -2204,6 +2220,10 @@ body {
     max-width: 50%;
     margin: 0 auto;
     text-align: center;
+
+    @media (max-width: 767px) {
+      max-width: 80%;
+    }
 
     &::after {
       background-image: linear-gradient(to right, #f7941d00, #f7941d, #f7941d00);
